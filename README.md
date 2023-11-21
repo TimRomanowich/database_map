@@ -6,7 +6,7 @@ You will need to obtain the config.env file from me and place it in the /config 
 Once all dependencies and the config.env file have been installed, 'npm start' will start the project on locahost:5000
 
 ## GET request to display library locations on the map.
-On page load, all current libraries locations are displayed on the map.
+On page load, all current libraries locations are displayed on the map.  Status Code 304 - Not Modified is returned in response body as no libraries locations have been added.
 ![image](https://github.com/TimRomanowich/database_map/assets/59593091/b2aabc93-c42f-4280-812f-c64a1550f95f)
 ## POST request
 To add a new library, click on "Add Library" or navigate to http://localhost:5000/add.html
@@ -28,12 +28,17 @@ The URL http://localhost:5000/api/v1/libraries contains the JSON entries for all
 
 
 UML:
-![image](https://github.com/TimRomanowich/database_map/assets/59593091/bbddd00e-43dd-4eb7-ac6f-73c33de66274)
+
 GET libraries to create the map container object
+![image](https://github.com/TimRomanowich/database_map/assets/59593091/b446a1a6-f08a-4ad7-9ba1-fbfc76ac2852)
+On intial page load for localhost:5000/  
+
 
 
 
 POST new library location.  Entered address is formated, geocoder and a location object is created to be mapped.
+![image](https://github.com/TimRomanowich/database_map/assets/59593091/b263b40b-e817-4ca7-92ba-1a83f1a5853e)
+
 
 
 
