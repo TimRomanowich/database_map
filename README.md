@@ -28,6 +28,12 @@ The URL http://localhost:5000/api/v1/libraries contains the JSON entries for all
 
 
 UML:
-GET libraries to create the map container object
 ![image](https://github.com/TimRomanowich/database_map/assets/59593091/bbddd00e-43dd-4eb7-ac6f-73c33de66274)
+GET libraries to create the map container object
+
+
+
+POST new library location.  Entered address is formated, geocoder and a location object is created to be mapped.
+
+
 
