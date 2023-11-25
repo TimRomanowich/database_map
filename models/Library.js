@@ -5,10 +5,10 @@ const geocoder = require('../utils/geocoder');
 const LibrarySchema = new mongoose.Schema({
   libraryId: {
     type: String,
-    required: [true, 'Please add a store ID'],
+    required: [true, 'Please add a library ID'],
     unique: true,
     trim: true,
-    maxlength: [10, 'Store ID must be less than 10 chars']
+    maxlength: [10, 'library ID must be less than 10 chars']
   },
   address: {
     type: String,
