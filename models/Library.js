@@ -25,6 +25,10 @@ const LibrarySchema = new mongoose.Schema({
     },
     formattedAddress: String
   },
+  
+    books: {
+      type: Array,
+    },
   createdAt: {
     type: Date,
     default: Date.now
